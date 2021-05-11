@@ -1,11 +1,11 @@
 import { ref, onMounted } from "vue";
-import { findByTopic } from "../services/examples";
+import { findExamples } from "../services/examples";
 
-export default function useExamples(topic) {
+export default function useExamples(query) {
   const examples = ref([]);
 
   onMounted(async () => {
-    examples.value = await findByTopic(topic);
+    examples.value = await findExamples(query);
   });
 
   return examples;

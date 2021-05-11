@@ -1,11 +1,6 @@
 import { getCollection } from "./db";
 
-export const find = async () => {
+export const findExamples = async (query) => {
   const collection = await getCollection("examples");
-  return collection.find();
-};
-
-export const findByTopic = async (topic) => {
-  const collection = await getCollection("examples");
-  return collection.find({ topics: topic });
+  return collection.find(query);
 };
