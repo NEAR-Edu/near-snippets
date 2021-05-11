@@ -7,14 +7,13 @@
 </template>
 
 <script>
-import Example from '../models/Example';
+import useExamples from '@/composables/useExamples';
 
 export default {
   name: 'Examples',
-  data: () => ({ examples: [] }),
-  async beforeMount() {
-    const examples = await Example.find();
-    this.examples = examples;
+  setup() {
+    const examples = useExamples('x');
+    return { examples };
   }
 }
 </script>
