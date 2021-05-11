@@ -32,7 +32,7 @@
                   </div>
                 </td>
                 <td class="px-6 py-4 text-left whitespace-nowrap">
-                  <div class="text-sm text-gray-900">{{ example.repo }}</div>
+                  <div class="text-sm text-gray-900">{{ example.title }} ({{ example.repo }})</div>
                   <div class="text-sm text-gray-500">{{ example.code.length }}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import Example from '../models/Example';
+import useExamples from '@/composables/useExamples';
 
 import rust from "@/assets/rust.png";
 import assemblyscript from "@/assets/assemblyscript.png";
@@ -56,16 +56,14 @@ import assemblyscript from "@/assets/assemblyscript.png";
 export default {
   name: 'Examples',
   data: () => ({
-    examples: [],
     images: {
       rust,
       assemblyscript
     }
   }),
-  async beforeMount() {
-    const examples = await Example.find();
-    this.examples = examples;
-    console.log(this.examples)
+  setup() {
+    const examples = useExamples();
+    return { examples };
   }
 }
 </script>
