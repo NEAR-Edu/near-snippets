@@ -1,16 +1,26 @@
 <template>
-  <Examples />
+  <suspense>
+    <template #default>
+      <div class="flex">
+        <topics />
+        <router-view />
+      </div>
+    </template>
+    <template #fallback>
+      <h1>Loading......</h1>
+    </template>
+  </suspense>
 </template>
 
 <script>
-import Examples from './components/Examples.vue'
+import Topics from "@/components/Topics";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Examples
-  }
-}
+    topics: Topics,
+  },
+};
 </script>
 
 <style>
@@ -20,6 +30,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
