@@ -1,4 +1,5 @@
 import { BSON } from "realm-web";
+import { fetchExplainer } from "../utils/examples";
 import { getCollection } from "./db";
 
 export const findExamples = async (query) => {
@@ -10,5 +11,13 @@ export const findExamples = async (query) => {
 
 export const findExampleById = async (_id) => {
   const collection = await getCollection("examples");
-  return collection.findOne({ _id: BSON.ObjectID(_id) });
+  const example = await collection.findOne({ _id: BSON.ObjectID(_id) });
+
+  console.log(example);
+  const explainer = await fetchExplainer(example);
+
+  return {
+    ...example,
+    explainer,
+  };
 };

@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "highlight.js": "^10.7.2",
+    "marked": "^2.0.3",
     "realm-web": "^1.2.1",
     "vue": "^3.0.0",
     "vue-router": "4"

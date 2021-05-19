@@ -3,7 +3,11 @@
     <template #default>
       <div class="flex">
         <topics />
-        <router-view />
+        <main class="h-screen w-full overflow-scroll">
+          <section class="max-w-7xl m-auto">
+            <router-view />
+          </section>
+        </main>
       </div>
     </template>
     <template #fallback>
@@ -28,7 +32,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 </style>
