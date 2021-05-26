@@ -13,7 +13,6 @@ export const findExampleById = async (_id) => {
   const collection = await getCollection("examples");
   const example = await collection.findOne({ _id: BSON.ObjectID(_id) });
 
-  console.log(example);
   const explainer = await fetchExplainer(example);
 
   return {
