@@ -1,6 +1,6 @@
 import { BSON } from "realm-web";
+import { toHTML } from "../utils/markdown";
 import { getCollection } from "./db";
-import marked from "marked";
 
 export const findExamples = async (query) => {
   const collection = await getCollection("examples");
@@ -15,6 +15,6 @@ export const findExampleById = async (_id) => {
 
   return {
     ...example,
-    explainer: marked(example.explainer),
+    explainer: await toHTML(example.explainer),
   };
 };

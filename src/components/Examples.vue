@@ -2,19 +2,31 @@
   <div class="bg-white shadow overflow-hidden sm:rounded-md mt-2 mb-5">
     <ul class="divide-y divide-gray-200">
       <li v-for="example in examples" :key="example._id">
-        <RouterLink :to="`/examples/${example._id}`" class="block hover:bg-gray-50">
+        <RouterLink
+          :to="`/examples/${example._id}`"
+          class="block hover:bg-gray-50"
+        >
           <div class="px-4 py-4 sm:px-6">
-            <img :src="images[example.sdk.language]" class="h-10 w-10 mr-4 float-left mt-2" />
+            <img
+              :src="images[example.sdk.language]"
+              class="h-10 w-10 mr-4 float-left mt-2"
+            />
             <div class="flex items-center justify-between">
               <div class="flex-1 min-w-0">
                 {{ example.title }}
               </div>
               <div class="ml-2 flex-shrink-0 flex">
-                <span :class="colorizeDifficulty('language', example)" class="px-3 inline-flex text-xs leading-5 rounded-full">
+                <span
+                  :class="colorizeDifficulty('language', example)"
+                  class="px-3 inline-flex text-xs leading-5 rounded-full"
+                >
                   {{ verbalizeDifficulty(example.difficulty.language) }}
                   {{ example.sdk.language }}
                 </span>
-                <span :class="colorizeDifficulty('near', example)" class="px-3 text-xs ml-2 leading-5 rounded-full">
+                <span
+                  :class="colorizeDifficulty('near', example)"
+                  class="px-3 text-xs ml-2 leading-5 rounded-full"
+                >
                   {{ verbalizeDifficulty(example.difficulty.near) }} NEAR
                 </span>
               </div>
@@ -22,8 +34,11 @@
             <div class="mt-2 sm:flex sm:justify-between">
               <div class="sm:flex">
                 <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
-                  <CodeIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-indigo-400" aria-hidden="true" />
-                  {{ example.code.length }} snippets @ {{ example.repo }}
+                  <CodeIcon
+                    class="flex-shrink-0 mr-1.5 h-5 w-5 text-indigo-400"
+                    aria-hidden="true"
+                  />
+                  @ {{ example.repo }}
                 </p>
               </div>
               <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">

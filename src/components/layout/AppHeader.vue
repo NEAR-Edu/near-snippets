@@ -4,7 +4,7 @@
       <div class="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
         <div class="flex items-center">
           <a href="/">
-            <span class="sr-only">NEAR Topics</span>
+            <span class="sr-only">NEAR Snippets</span>
             <img class="h-20 w-auto" src="@/assets/near_logo_stack_wht_sq.png"/>
           </a>
           <div class="hidden ml-10 space-x-8 lg:block">
@@ -14,7 +14,7 @@
             >{{ link.name }}</router-link>
           </div>
         </div>
-        <span class="text-4xl font-extrabold text-white">NEAR Examples</span>
+        <span class="text-4xl font-extrabold text-white">NEAR Snippets</span>
         <div class="ml-10 space-x-4">
           <a @click="login" class="inline-block bg-indigo-500 hover:bg-yellow-300 py-2 px-4 border border-transparent rounded-md text-sm lg:text-xl font-medium text-white hover:text-gray-600 cursor-pointer">
             {{ authButton }}
