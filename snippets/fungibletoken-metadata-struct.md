@@ -3,6 +3,9 @@ title: FungibleToken Metadata struct
 tags: [struct, fungible token, standards]
 topics: [Compound Types]
 repo: https://github.com/near/near-sdk-rs
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 1
   language: 1

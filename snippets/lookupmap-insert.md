@@ -3,6 +3,9 @@ title: LookupMap Insert
 tags: [LookupMap]
 topics: [Mutability]
 repo: https://github.com/near-examples/rust-status-message
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 1
   language: 1

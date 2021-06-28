@@ -1,8 +1,11 @@
 ---
 title: match with PromiseResult
 tags: [enum, cross contract calls, promises, nearcore, match]
-topics: [Compound Types, Control Flow]
+topics: [Compound TypesControl Flow]
 repo: https://github.com/ref-finance/ref-contracts
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 3
   language: 1

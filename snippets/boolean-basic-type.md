@@ -1,8 +1,11 @@
 ---
 title: Boolean Basic Type
 tags: []
-topics: [Basic Types, Mutability]
+topics: [Basic TypesMutability]
 repo: https://github.com/near/core-contracts
+sdk:
+  language: rust
+  version: near-sdk-rs@2.0.0
 difficulty:
   near: 1
   language: 1

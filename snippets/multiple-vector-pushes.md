@@ -1,8 +1,11 @@
 ---
 title: Multiple Vector Pushes
 tags: [Vector, match]
-topics: [Mutability, Control Flow]
+topics: [MutabilityControl Flow]
 repo: https://github.com/near-examples/nft-exquisite-corpse
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 1
   language: 2

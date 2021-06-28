@@ -3,6 +3,9 @@ title: Processing Transactions and Sending Receipts
 tags: [nearcore]
 topics: [Control Flow]
 repo: https://github.com/near/nearcore
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 3
   language: 1

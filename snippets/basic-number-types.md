@@ -1,8 +1,11 @@
 ---
 title: Basic Number Types
 tags: [u128, u32, json_types]
-topics: [Basic Types, Mutability]
+topics: [Basic TypesMutability]
 repo: https://github.com/near-examples/token-printer
+sdk:
+  language: rust
+  version: near-sdk-rs@3.1.0
 difficulty:
   near: 2
   language: 1
