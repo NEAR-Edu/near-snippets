@@ -1,7 +1,7 @@
 ---
 title: i8 Basic Type
 tags: [overflows]
-topics: [Basic TypesMutability]
+topics: [Basic Types, Mutability]
 repo: https://github.com/near-examples/rust-counter
 sdk:
   language: rust
