@@ -1,7 +1,7 @@
 ---
 title: Basic Number Types
 tags: [u128, u32, json_types]
-topics: [Basic TypesMutability]
+topics: [Basic Types, Mutability]
 repo: https://github.com/near-examples/token-printer
 difficulty:
   near: 2

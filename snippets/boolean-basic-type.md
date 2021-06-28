@@ -1,7 +1,7 @@
 ---
 title: Boolean Basic Type
 tags: []
-topics: [Basic TypesMutability]
+topics: [Basic Types, Mutability]
 repo: https://github.com/near/core-contracts
 difficulty:
   near: 1
