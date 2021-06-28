@@ -10,8 +10,6 @@ marked.setOptions({
     const endLine = Number(url.hash.split("-")[1]?.slice(1) || startLine);
     const path = url.pathname.replace("/blob", "");
 
-    console.log(code, language, cb);
-
     return fetch(`https://raw.githubusercontent.com${path}`)
       .then((res) => res.text())
       .then((text) => text.split("\n").slice(startLine, endLine))

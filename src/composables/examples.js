@@ -5,11 +5,11 @@ export const useExamples = (topic) => {
   const examples = ref([]);
 
   onMounted(async () => {
-    examples.value = await findExamples({ topics: topic.value });
+    examples.value = await findExamples(topic ? { topics: topic.value } : {});
   });
 
   watch(topic, async () => {
-    examples.value = await findExamples({ topics: topic.value });
+    examples.value = await findExamples(topic ? { topics: topic.value } : {});
   });
 
   return examples;

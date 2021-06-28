@@ -17,6 +17,7 @@
     "instantsearch.js": "^4.22.0",
     "js-yaml": "^4.1.0",
     "marked": "^2.0.3",
+    "near-api-js": "^0.41.0",
     "realm-web": "^1.2.1",
     "vue": "^3.0.0",
     "vue-router": "4"
